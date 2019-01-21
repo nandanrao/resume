@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url('./fonts/inconsolata-v16-latin-regular.woff2') format('woff2') /* Super Modern Browsers */
+}
+
+:root {
+  --accent-color: #3EB549
+}
+
+/* cutive-mono-regular - latin */
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cutive Mono Regular'), local('CutiveMono-Regular'), url('./fonts/cutive-mono-v7-latin-regular.woff2') format('woff2')
+}
+
+body {
+  color: #666;
+  font-family: 'Inconsolata';
+}
+
+h1 {
+  color: var(--accent-color);
+  font-family: 'Cutive Mono';
+  font-size: 3.5em;            
+  text-transform: lowercase;
+  display: inline-block;
+  margin: 0 .5em .5em .5em;
+}
+
+h2 {
+  font-family: 'Cutive Mono';
+  font-size: 1em;            
+  font-weight: 700;
+  color: #CCC;
+  text-transform: uppercase;
+}
+
+.timeline-item {
+  display: flex;
+}
+
+.timeline-item:first-child > div, .education-item:first-child > div {
+  padding: 0;
+}
+
+.timeline .date, .timeline .description {
+  margin: 0 0 0 1em;
+  padding: 20px 0 0 0;
+}
+
+.education .date, .education .description {
+  margin: 0 0 0 1em;
+  padding: 5px 0 0 0;
+}
+
+.date {
+  width: 25%;
+  font-size: 1em;
+  text-align: right;
+}
+
+.timeline .date span{
+  display:block;
+}
+
+.description {
+  width: 75%;
+  border-width: 0 0 0 1px;
+  border-color: #DDD;
+  border-style: solid;
+}
+
+.description p {
+  font-size: .8em;
+}
+
+.education {
+  margin: 2.5em 0 0 0;
+}
+
+.timeline .description p {
+  margin-top: .25em;
+  line-height: 1.2em;
+}
+
+.education-item {
+  display: flex;
+}
+
+.education-item .description h3:first-child {
+  font-family: 'Cutive Mono';
+  font-size: .9em;
+  font-weight: 700;
+  color: #CCC;
+  text-transform: uppercase;
+}
+
+.contact {
+  margin: 2.5em 2em 0 0;
+  color: var(--accent-color);
+  text-align: right;
+}
+
+
