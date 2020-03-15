@@ -128,7 +128,7 @@ h2 {
 }
 
 .education {
-  margin: 2.5em 0 0 0;
+  margin: 2em 0 0 0;
 }
 
 .timeline .description p {
@@ -149,7 +149,7 @@ h2 {
 }
 
 .contact {
-  margin: 2.5em 2em 0 0;
+  margin: 2em 2em 0 0;
   color: var(--accent-color);
   text-align: right;
 }
