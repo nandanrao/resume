@@ -74,7 +74,7 @@ body {
 h1 {
   color: var(--accent-color);
   font-family: 'Cutive Mono';
-  font-size: 3.5em;            
+  font-size: 3.5em;
   text-transform: lowercase;
   display: inline-block;
   margin: 0 .5em .5em .5em;
@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   font-family: 'Cutive Mono';
-  font-size: 1em;            
+  font-size: 1em;
   font-weight: 700;
   color: #CCC;
   text-transform: uppercase;
@@ -98,12 +98,16 @@ h2 {
 
 .timeline .date, .timeline .description {
   margin: 0 0 0 1em;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .education .date, .education .description {
   margin: 0 0 0 1em;
   padding: 5px 0 0 0;
+}
+
+.education .description h3, .education .description p {
+  display: inline-block;
 }
 
 .date {
@@ -132,7 +136,7 @@ h2 {
 }
 
 .timeline .description p {
-  margin-top: .25em;
+  margin-top: .2em;
   line-height: 1.2em;
 }
 
@@ -153,5 +157,3 @@ h2 {
   color: var(--accent-color);
   text-align: right;
 }
-
-
